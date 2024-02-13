@@ -3,9 +3,7 @@ import { HoverCard } from "./ui/hover-card";
 import { Hover } from "./hoverCard";
 
 export const Kinro = async() => {
-  const res = await fetch(
-    `https://kinro-api.vercel.app/`
-  );
+  const res = await fetch(`https://kinro-api.vercel.app/`);
   const jsons = await res.json();
   return (
     <div className="flex flex-col-reverse md:flex-row items-center justify-center h-screen gap-10 font-noto">
